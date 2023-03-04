@@ -8,7 +8,13 @@ import { HamburgerIcon, CloseIcon } from './icons'
 const hoverUnderline =
     'relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full'
 
-export default function ({ dict, lang }: { dict: { home: string; about: string; projects: string }; lang: Locale }) {
+export default function Navbar({
+    dict,
+    lang,
+}: {
+    dict: { home: string; about: string; projects: string }
+    lang: Locale
+}) {
     const [open, setOpen] = useState(false)
 
     return (
