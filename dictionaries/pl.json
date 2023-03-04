@@ -3,5 +3,10 @@
         "welcome": "Jestem",
         "iam": "i zajmuję się",
         "job": "tworzeniem aplikacji webowych"
+    },
+    "nav": {
+        "home": "Strona główna",
+        "about": "O mnie",
+        "projects": "Projekty"
     }
 }
