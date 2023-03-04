@@ -53,7 +53,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                             </div>
                             <iframe
                                 src="http://mytriproutes.com:3000"
-                                className="h-[50vh] w-full md:order-1 md:col-span-3"
+                                className="h-[50vh] w-full bg-white md:order-1 md:col-span-3"
                             />
                         </article>
                         <article className="contents">
