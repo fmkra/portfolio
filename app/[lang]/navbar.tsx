@@ -3,7 +3,7 @@
 import { Locale } from '@/i18n-config'
 import { useState } from 'react'
 import ChangeLanguage from './changeLanguage'
-import { HamburgerIcon } from './icons'
+import { HamburgerIcon, CloseIcon } from './icons'
 
 const hoverUnderline =
     'relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full'
@@ -25,6 +25,9 @@ export default function ({ dict, lang }: { dict: { home: string; about: string; 
                         open ? 'max-md:left-0' : 'max-md:left-[-15rem]'
                     }`}
                 >
+                    <li className="md:hidden">
+                        <CloseIcon className="h-8 hover:cursor-pointer" onClick={() => setOpen(false)} />
+                    </li>
                     <li>
                         <a href="#home" onClick={() => setOpen(false)} className={hoverUnderline}>
                             {dict.home}
