@@ -1,3 +1,5 @@
+import { MouseEventHandler } from 'react'
+
 export const DiscordIcon = ({ className }: { className?: string }) => (
     <svg
         viewBox="0 -28.5 256 256"
@@ -47,26 +49,26 @@ export const MailIcon = ({ className }: { className?: string }) => (
 )
 
 export const NpmIcon = ({ className }: { className?: string }) => (
-    <svg width="48" height="24" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <svg width="48" height="32" xmlns="http://www.w3.org/2000/svg" className={className}>
         <title>npm</title>
+        <rect x="0" y="-5.99993" id="svg_1" fill="none" height="48" width="48" />
+        <rect fill="#fff" id="svg_3" height="4.84" width="2.4" y="13.90007" x="21.6" />
+        <path
+            fill="#fff"
+            id="svg_4"
+            d="m2,9.00007l0,14.7l12.2,0l0,2.5l9.8,0l0,-2.5l22,0l0,-14.7l-44,0zm12.2,12.2l-2.4,0l0,-7.3l-2.5,0l0,7.3l-4.8,0l0,-9.7l9.7,0l0,9.7zm12.3,0l-4.9,0l0,2.5l-4.9,0l0,-12.2l9.8,0l0,9.7zm17.1,0l-2.4,0l0,-7.3l-2.5,0l0,7.3l-2.5,0l0,-7.3l-2.4,0l0,7.3l-4.9,0l0,-9.7l14.7,0l0,9.7z"
+        />
+    </svg>
+)
 
-        <g>
-            <title>Layer 1</title>
-            <g data-name="Layer 2" id="Layer_2">
-                <g data-name="invisible box" id="invisible_box">
-                    <rect x="-0.25" y="-10.74988" id="svg_1" fill="none" height="48" width="48" />
-                </g>
-                <g data-name="Q3 icons" id="Q3_icons">
-                    <g id="svg_2">
-                        <rect id="svg_3" height="4.84" width="2.4" y="9.15012" x="21.35" fill="#fff" />
-                        <path
-                            id="svg_4"
-                            d="m1.75,4.25012l0,14.7l12.2,0l0,2.5l9.8,0l0,-2.5l22,0l0,-14.7l-44,0zm12.2,12.2l-2.4,0l0,-7.3l-2.5,0l0,7.3l-4.8,0l0,-9.7l9.7,0l0,9.7zm12.3,0l-4.9,0l0,2.5l-4.9,0l0,-12.2l9.8,0l0,9.7zm17.1,0l-2.4,0l0,-7.3l-2.5,0l0,7.3l-2.5,0l0,-7.3l-2.4,0l0,7.3l-4.9,0l0,-9.7l14.7,0l0,9.7z"
-                            fill="#fff"
-                        />
-                    </g>
-                </g>
-            </g>
-        </g>
+export const HamburgerIcon = ({
+    onClick,
+    className,
+}: {
+    className?: string
+    onClick: MouseEventHandler<SVGSVGElement>
+}) => (
+    <svg fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={className} onClick={onClick}>
+        <path d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z" />
     </svg>
 )
