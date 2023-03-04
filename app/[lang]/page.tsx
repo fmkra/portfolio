@@ -47,7 +47,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <article className="contents">
                             <div className="md:order-2 md:col-span-2">
                                 <h2 className="mb-4 text-center text-2xl">
-                                    <Link href="http://mytriproutes.com:3000">mytriproutes.com</Link>
+                                    <Link href="http://mytriproutes.com:3000/">mytriproutes.com</Link>
                                 </h2>
                                 <p>{dict.projects.mytriproutes}</p>
                             </div>
