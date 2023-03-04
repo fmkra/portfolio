@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 
 export default function Root({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
     return (
-        <html lang={params.lang}>
+        <html lang={params.lang} className="bg-gray-800">
             <body>{children}</body>
         </html>
     )
