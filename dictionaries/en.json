@@ -10,7 +10,7 @@
         "projects": "Projects"
     },
     "projects": {
-        "title": "Moje projekty",
+        "title": "My projects",
         "mytriproutes": "A website for managing photos and gps tracks.",
         "nextGallery": "A npm package for creating resposive image gallery."
     }
