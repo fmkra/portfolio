@@ -8,5 +8,10 @@
         "home": "Home",
         "about": "About",
         "projects": "Projects"
+    },
+    "projects": {
+        "title": "Moje projekty",
+        "mytriproutes": "A website for managing photos and gps tracks.",
+        "nextGallery": "A npm package for creating resposive image gallery."
     }
 }

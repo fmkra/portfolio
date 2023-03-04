@@ -8,5 +8,10 @@
         "home": "Strona główna",
         "about": "O mnie",
         "projects": "Projekty"
+    },
+    "projects": {
+        "title": "Moje projekty",
+        "mytriproutes": "Strona internetowa do zarządzania zdjęciami i trasami gps.",
+        "nextGallery": "Biblioteka npm do tworzenia galerii zdjęć."
     }
 }

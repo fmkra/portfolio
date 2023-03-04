@@ -40,7 +40,37 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                     </div>
                 </div>
             </section>
-            <section id="about">about</section>
+            <section id="projects">
+                <div className="bg-gray-900 py-12">
+                    <h1 className="block text-center text-6xl">{dict.projects.title}</h1>
+                    <div className="mx-auto my-12 grid max-w-5xl grid-cols-1 gap-4 p-5 md:grid-cols-5">
+                        <article className="contents">
+                            <div className="md:order-2 md:col-span-2">
+                                <h2 className="mb-4 text-center text-2xl">
+                                    <Link href="http://mytriproutes.com:3000">mytriproutes.com</Link>
+                                </h2>
+                                <p>{dict.projects.mytriproutes}</p>
+                            </div>
+                            <iframe
+                                src="http://mytriproutes.com:3000"
+                                className="h-[50vh] w-full md:order-1 md:col-span-3"
+                            />
+                        </article>
+                        <article className="contents">
+                            <div className="md:order-3 md:col-span-2">
+                                <h2 className="mb-4 text-center text-2xl">
+                                    <Link href="https://github.com/fmkra/next-gallery">next-gallery</Link>
+                                </h2>
+                                <p>{dict.projects.nextGallery}</p>
+                            </div>
+                            <iframe
+                                src="https://next-gallery.fkrawczyk.pl/basic"
+                                className="h-[50vh] w-full bg-gray-800 md:order-4 md:col-span-3"
+                            />
+                        </article>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
