@@ -1,12 +1,14 @@
 'use client'
 
+import { Locale } from '@/i18n-config'
 import { useState } from 'react'
+import ChangeLanguage from './changeLanguage'
 import { HamburgerIcon } from './icons'
 
 const hoverUnderline =
     'relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full'
 
-export default function ({ dict }: { dict: { home: string; about: string; projects: string } }) {
+export default function ({ dict, lang }: { dict: { home: string; about: string; projects: string }; lang: Locale }) {
     const [open, setOpen] = useState(false)
 
     return (
@@ -37,6 +39,9 @@ export default function ({ dict }: { dict: { home: string; about: string; projec
                         <a href="#projects" onClick={() => setOpen(false)} className={hoverUnderline}>
                             {dict.projects}
                         </a>
+                    </li>
+                    <li>
+                        <ChangeLanguage lang={lang} />
                     </li>
                 </ul>
             </nav>

@@ -22,7 +22,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         </div>
                     </main>
                     <div className="absolute top-0 left-0 right-0 flex md:p-5">
-                        <Navbar dict={dict.nav} />
+                        <Navbar dict={dict.nav} lang={lang} />
                         <div className="ml-auto flex flex-wrap justify-end">
                             <Link className="m-5" href="https://discord.com/users/302040960848625664" target="_blank">
                                 <DiscordIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
