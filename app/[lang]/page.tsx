@@ -47,12 +47,12 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <article className="contents">
                             <div className="md:order-2 md:col-span-2">
                                 <h2 className="mb-4 text-center text-2xl">
-                                    <Link href="http://mytriproutes.com:3000/">mytriproutes.com</Link>
+                                    <Link href="https://mytriproutes.com">mytriproutes.com</Link>
                                 </h2>
                                 <p>{dict.projects.mytriproutes}</p>
                             </div>
                             <iframe
-                                src="http://mytriproutes.com:3000"
+                                src="https://mytriproutes.com"
                                 className="h-[50vh] w-full bg-white md:order-1 md:col-span-3"
                             />
                         </article>
