@@ -52,7 +52,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                                 <p>{dict.projects.mytriproutes}</p>
                             </div>
                             <iframe
-                                src="https://mytriproutes.com"
+                                src="https://mytriproutes.com/?ignore_indev"
                                 className="h-[50vh] w-full bg-white md:order-1 md:col-span-3"
                             />
                         </article>
