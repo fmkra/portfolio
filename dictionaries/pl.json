@@ -11,7 +11,12 @@
     },
     "projects": {
         "title": "Moje projekty",
-        "mytriproutes": "Strona internetowa do zarządzania zdjęciami i trasami gps.",
-        "nextGallery": "Biblioteka npm do tworzenia galerii zdjęć."
+        "tech": "Wykorzystane technologie",
+        "mytriproutes": {
+            "description": "Strona internetowa do zarządzania zdjęciami i trasami gps."
+        },
+        "nextGallery": {
+            "description": "Biblioteka npm do tworzenia galerii zdjęć z wykorzystaniem next.js. Ułożenie zdjęć jest ustalane za pomocą specjalnego algorytmu. Użytkownik może dostosować wielkość zdjęć do swoich potrzeb."
+        }
     }
 }

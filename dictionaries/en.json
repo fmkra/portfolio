@@ -11,7 +11,12 @@
     },
     "projects": {
         "title": "My projects",
-        "mytriproutes": "A website for managing photos and gps tracks.",
-        "nextGallery": "A npm package for creating resposive image gallery."
+        "tech": "Technologies used",
+        "mytriproutes": {
+            "description": "A website for managing photos and gps tracks."
+        },
+        "nextGallery": {
+            "description": "A npm package for creating resposive image gallery with next.js. Images placement is calculated by the special algorithm. User can customize how big images should be."
+        }
     }
 }

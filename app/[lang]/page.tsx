@@ -43,13 +43,22 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
             <section id="projects">
                 <div className="bg-gray-900 py-12">
                     <h1 className="block text-center text-6xl">{dict.projects.title}</h1>
-                    <div className="mx-auto my-12 grid max-w-5xl grid-cols-1 gap-4 p-5 md:grid-cols-5">
+                    <div className="mx-auto my-12 grid max-w-6xl grid-cols-1 gap-4 p-5 text-justify md:grid-cols-5">
                         <article className="contents">
                             <div className="md:order-2 md:col-span-2">
                                 <h2 className="mb-4 text-center text-2xl">
                                     <Link href="https://mytriproutes.com">mytriproutes.com</Link>
                                 </h2>
-                                <p>{dict.projects.mytriproutes}</p>
+                                <p>{dict.projects.mytriproutes.description}</p>
+                                <p className="mt-4">{dict.projects.tech}:</p>
+                                <ul>
+                                    <li>typescript React Next.js leaflet</li>
+                                    <li>SCSS tailwind</li>
+                                    <li>Python django rest_framework</li>
+                                    <li>Postgresql elasticsearch celery</li>
+                                    <li>Stripe</li>
+                                    <li>git docker npm</li>
+                                </ul>
                             </div>
                             <iframe
                                 src="https://mytriproutes.com/?ignore_indev"
@@ -61,7 +70,13 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                                 <h2 className="mb-4 text-center text-2xl">
                                     <Link href="https://github.com/fmkra/next-gallery">next-gallery</Link>
                                 </h2>
-                                <p>{dict.projects.nextGallery}</p>
+                                <p>{dict.projects.nextGallery.description}</p>
+                                <p className="mt-4">{dict.projects.tech}:</p>
+                                <ul>
+                                    <li>typescript</li>
+                                    <li>React Next.js</li>
+                                    <li>git npm</li>
+                                </ul>
                             </div>
                             <iframe
                                 src="https://next-gallery.fkrawczyk.pl/basic"
