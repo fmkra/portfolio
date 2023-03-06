@@ -10,7 +10,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
     return (
         <>
             <section id="home">
-                <div className="relative flex min-h-screen w-screen flex-col items-center justify-center bg-gray-800">
+                <div className="relative flex min-h-screen w-full flex-col items-center justify-center bg-gray-800">
                     <main>
                         <div>
                             <p>{dict.title.welcome}</p>
