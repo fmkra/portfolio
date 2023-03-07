@@ -1,8 +1,19 @@
+import { FC, ReactNode } from 'react'
 import { getDictionary } from '../../get-dictionary'
 import { Locale } from '../../i18n-config'
 import { DiscordIcon, GithubIcon, MailIcon, NpmIcon } from './icons'
 import Link from 'next/link'
 import Navbar from './navbar'
+import Image from 'next/image'
+
+const Tech = ({ icon, children }: { icon: string; children: string }) => {
+    return (
+        <div className="flex justify-center rounded-md border border-white p-1">
+            <Image src={`/icons/${icon}`} alt={children + ' icon'} height={24} width={24} />
+            <span className="ml-1">{children}</span>
+        </div>
+    )
+}
 
 export default async function Page({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getDictionary(lang)
@@ -49,16 +60,29 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                                 <h2 className="mb-4 text-center text-2xl">
                                     <Link href="https://mytriproutes.com">mytriproutes.com</Link>
                                 </h2>
-                                <p>{dict.projects.mytriproutes.description}</p>
-                                <p className="mt-4">{dict.projects.tech}:</p>
-                                <ul>
-                                    <li>typescript React Next.js leaflet</li>
-                                    <li>SCSS tailwind</li>
-                                    <li>Python django rest_framework</li>
-                                    <li>Postgresql elasticsearch celery</li>
-                                    <li>Stripe</li>
-                                    <li>git docker npm</li>
-                                </ul>
+                                <section>
+                                    <p>{dict.projects.mytriproutes.description}</p>
+                                </section>
+                                <section>
+                                    <p className="mt-4 mb-2">{dict.projects.tech}:</p>
+                                    <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">
+                                        <Tech icon="typescript.svg">typescript</Tech>
+                                        <Tech icon="react.svg">React</Tech>
+                                        <Tech icon="nextjs.svg">Next.js</Tech>
+                                        <Tech icon="leaflet.svg">leaflet</Tech>
+                                        <Tech icon="scss.svg">scss</Tech>
+                                        <Tech icon="tailwind.svg">tailwind</Tech>
+                                        <Tech icon="django.svg">django</Tech>
+                                        <Tech icon="rest.png">REST framework</Tech>
+                                        <Tech icon="postgresql.svg">postgresql</Tech>
+                                        <Tech icon="elastic.svg">elasticsearch</Tech>
+                                        <Tech icon="celery.webp">celery</Tech>
+                                        <Tech icon="stripe.svg">stripe</Tech>
+                                        <Tech icon="git.svg">git</Tech>
+                                        <Tech icon="docker.svg">docker</Tech>
+                                        <Tech icon="npm.svg">npm</Tech>
+                                    </div>
+                                </section>
                             </div>
                             <iframe
                                 src="https://mytriproutes.com/?ignore_indev"
@@ -70,13 +94,19 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                                 <h2 className="mb-4 text-center text-2xl">
                                     <Link href="https://github.com/fmkra/next-gallery">next-gallery</Link>
                                 </h2>
-                                <p>{dict.projects.nextGallery.description}</p>
-                                <p className="mt-4">{dict.projects.tech}:</p>
-                                <ul>
-                                    <li>typescript</li>
-                                    <li>React Next.js</li>
-                                    <li>git npm</li>
-                                </ul>
+                                <section>
+                                    <p>{dict.projects.nextGallery.description}</p>
+                                </section>
+                                <section>
+                                    <p className="mt-4 mb-2">{dict.projects.tech}:</p>
+                                    <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">
+                                        <Tech icon="typescript.svg">typescript</Tech>
+                                        <Tech icon="react.svg">React</Tech>
+                                        <Tech icon="nextjs.svg">Next.js</Tech>
+                                        <Tech icon="git.svg">git</Tech>
+                                        <Tech icon="npm.svg">npm</Tech>
+                                    </div>
+                                </section>
                             </div>
                             <iframe
                                 src="https://next-gallery.fkrawczyk.pl/basic"
