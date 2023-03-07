@@ -38,7 +38,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                             <Link className="m-5" href="https://discord.com/users/302040960848625664" target="_blank">
                                 <DiscordIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
                             </Link>
-                            <Link className="m-5" href="https://npmjs.com/~kotmawszy" target="_blank">
+                            <Link className="m-5" href="https://npmjs.com/~fmkra" target="_blank">
                                 <NpmIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
                             </Link>
                             <Link className="m-5" href="https://github.com/fmkra" target="_blank">
