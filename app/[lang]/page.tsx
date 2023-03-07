@@ -21,7 +21,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
     return (
         <>
             <section id="home">
-                <div className="relative flex min-h-screen w-full flex-col items-center justify-center bg-gray-800">
+                <div className="relative flex h-52 min-h-screen w-full flex-col items-center justify-center bg-gray-800 pt-16">
                     <main>
                         <div>
                             <p>{dict.title.welcome}</p>
@@ -86,7 +86,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                             </div>
                             <iframe
                                 src="https://mytriproutes.com/?ignore_indev"
-                                className="h-[50vh] w-full bg-white md:order-1 md:col-span-3"
+                                className="h-full min-h-[50vh] w-full bg-white md:order-1 md:col-span-3"
                             />
                         </article>
                         <article className="contents">
@@ -110,7 +110,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                             </div>
                             <iframe
                                 src="https://next-gallery.fkrawczyk.pl/basic"
-                                className="h-[50vh] w-full bg-gray-800 md:order-4 md:col-span-3"
+                                className="h-full min-h-[50vh] w-full bg-gray-800 md:order-4 md:col-span-3"
                             />
                         </article>
                     </div>
