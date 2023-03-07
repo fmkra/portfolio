@@ -19,6 +19,10 @@
         "nextGallery": {
             "description": "A npm package for creating resposive image gallery with next.js. Images placement is calculated by the special algorithm. User can customize how big images should be.",
             "skills": "I came up with this package because I needed a way to display image gallery on mytriproues website. I wanted to extract this functionality to separate package and make it OpenSource to share with other devs. I've learned how to setup package.json for more advanced usage as well as how versions and publishing npm package work."
+        },
+        "ltv": {
+            "description": "Visualizes how vectors on the plane behave when applying linear transformation given by 2x2 matrix. It also calculates eigenvalues and eigenvectors.",
+            "skills": "I created this project during linear algebra classes at university. I learned integration between p5.js library and React and how to deploy a website on vercel."
         }
     }
 }

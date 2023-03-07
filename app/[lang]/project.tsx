@@ -48,7 +48,7 @@ const Project = ({
                 <InView rootMargin="100px">
                     {({ inView, ref }) => (
                         <div
-                            className={`max-md:h-72 max-md:max-h-[80vh] max-md:min-h-[50vh] ${
+                            className={`min-h-[50vh] max-md:h-72 max-md:max-h-[80vh] ${
                                 side == 'left' ? 'md:order-1 md:col-start-1' : 'md:order-2 md:col-start-3'
                             } md:col-span-3 md:h-full md:max-h-screen ${skillsUnder ? '' : 'md:row-span-2'}`}
                             ref={ref}

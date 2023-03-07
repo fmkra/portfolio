@@ -19,6 +19,10 @@
         "nextGallery": {
             "description": "Pakiet npm do tworzenia galerii zdjęć z wykorzystaniem next.js. Ułożenie zdjęć jest ustalane za pomocą specjalnego algorytmu. Użytkownik może dostosować wielkość zdjęć do swoich potrzeb.",
             "skills": "Stworzyłem ten pakiet, ponieważ potrzebowałem sposobu na wyświetlenie galerii zdjęć na stronie mytriproutes.com. Chciałem wyodrębnić tą funkcjonalność do osobnej biblioteki i udostępnić ją dla innych jako OpenSource. Nauczyłem się jak skonfigurować package.json do bardziej zaawansowanego użytku oraz jak działają wersje i publikowanie pakietów npm."
+        },
+        "ltv": {
+            "description": "Pokazuje zachowanie wektorów na płaszczyźnie przy przekształceniu liniowym zadanym macierzą 2x2. Oblicza również wartości własne i wektory własne.",
+            "skills": "Stworzyłem ten projekt w trakcie zajęć z algebry liniowej na uniwersytecie. Nauczyłem się integracji biblioteki p5.js z React'em oraz jak postawić stronę na vercel'u."
         }
     }
 }

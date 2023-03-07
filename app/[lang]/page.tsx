@@ -54,7 +54,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
             </section>
             <section id="projects">
                 <div className="bg-gray-900 py-12">
-                    <h1 className="block text-center text-6xl">{dict.projects.title}</h1>
+                    <h1 className="mb-8 block text-center text-6xl">{dict.projects.title}</h1>
                     <Project
                         name="mytriproutes.com"
                         src="https://mytriproutes.com/?ignore_indev"
@@ -93,6 +93,20 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <Tech icon="nextjs.svg">Next.js</Tech>
                         <Tech icon="git.svg">git</Tech>
                         <Tech icon="npm.svg">npm</Tech>
+                    </Project>
+                    <Project
+                        src="https://linear-transformations.fkrawczyk.pl"
+                        dict={dict.projects.ltv}
+                        techHeader={dict.projects.tech}
+                        name="Linear transformations visualization"
+                        link="https://github.com/fmkra/linear-transformations-visualization"
+                        side="left"
+                    >
+                        <Tech icon="p5js.webp">p5.js</Tech>
+                        <Tech icon="typescript.svg">typescript</Tech>
+                        <Tech icon="react.svg">React</Tech>
+                        <Tech icon="css.svg">CSS</Tech>
+                        <Tech icon="html.svg">HTML</Tech>
                     </Project>
                 </div>
             </section>
