@@ -62,6 +62,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         dict={dict.projects.mytriproutes}
                         techHeader={dict.projects.tech}
                         side="left"
+                        skillsUnder
                     >
                         <Tech icon="typescript.svg">typescript</Tech>
                         <Tech icon="react.svg">React</Tech>

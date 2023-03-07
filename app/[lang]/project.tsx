@@ -12,6 +12,7 @@ const Project = ({
     name,
     link,
     side,
+    skillsUnder,
 }: {
     src: string
     dict: { description: string; skills: string }
@@ -20,6 +21,7 @@ const Project = ({
     name: string
     link: string
     side: 'left' | 'right'
+    skillsUnder?: boolean
 }) => {
     return (
         <div className="mx-auto my-6 grid max-w-6xl grid-cols-1 gap-4 p-5 text-justify md:grid-cols-5">
@@ -40,7 +42,7 @@ const Project = ({
                         <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">{children}</div>
                     </section>
                 </div>
-                <section className="md:order-3 md:col-span-5">
+                <section className={`md:order-3 ${skillsUnder ? 'md:col-span-5' : 'md:col-span-2'}`}>
                     <p>{dict.skills}</p>
                 </section>
                 <InView rootMargin="100px">
@@ -48,7 +50,7 @@ const Project = ({
                         <div
                             className={`max-md:h-72 max-md:max-h-[80vh] max-md:min-h-[50vh] ${
                                 side == 'left' ? 'md:order-1 md:col-start-1' : 'md:order-2 md:col-start-3'
-                            } md:col-span-3 md:h-full md:max-h-screen`}
+                            } md:col-span-3 md:h-full md:max-h-screen ${skillsUnder ? '' : 'md:row-span-2'}`}
                             ref={ref}
                         >
                             {inView ? (
