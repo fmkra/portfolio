@@ -27,6 +27,11 @@
         "ltv": {
             "description": "Pokazuje zachowanie wektorów na płaszczyźnie przy przekształceniu liniowym zadanym macierzą 2x2. Oblicza również wartości własne i wektory własne.",
             "skills": "Stworzyłem ten projekt w trakcie zajęć z algebry liniowej na uniwersytecie. Nauczyłem się integracji biblioteki p5.js z React'em oraz jak postawić stronę na vercel'u."
+        },
+        "other": {
+            "title": "Algorytmy sortujące i inne",
+            "description": "Inne, mniejsze projekty graficzne zrobione w bibliotece p5.js.",
+            "skills": ""
         }
     }
 }

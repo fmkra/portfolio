@@ -54,15 +54,15 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
             </section>
             <section id="about">
                 <div className="bg-gray-900 py-12">
-                    <h1 className="mb-8 block text-center text-5xl">{dict.about.title}</h1>
-                    <div className="mx-auto max-w-4xl text-justify">
+                    <h1 className="mb-8 block px-5 text-center text-5xl">{dict.about.title}</h1>
+                    <div className="mx-auto max-w-4xl p-5 text-justify">
                         <p>{dict.about.text}</p>
                     </div>
                 </div>
             </section>
             <section id="projects">
                 <div className="bg-gray-800 py-12">
-                    <h1 className="mb-8 block text-center text-5xl">{dict.projects.title}</h1>
+                    <h1 className="mb-8 block px-5 text-center text-5xl">{dict.projects.title}</h1>
                     <Project
                         name="mytriproutes.com"
                         src="https://mytriproutes.com/?ignore_indev"
@@ -113,6 +113,20 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <Tech icon="p5js.webp">p5.js</Tech>
                         <Tech icon="typescript.svg">typescript</Tech>
                         <Tech icon="react.svg">React</Tech>
+                        <Tech icon="css.svg">CSS</Tech>
+                        <Tech icon="html.svg">HTML</Tech>
+                    </Project>
+                    <Project
+                        src="http://projekty.fkrawczyk.pl/sorting-algorithms"
+                        dict={dict.projects.other}
+                        techHeader={dict.projects.tech}
+                        name={dict.projects.other.title}
+                        link="http://projekty.fkrawczyk.pl"
+                        side="right"
+                    >
+                        <Tech icon="p5js.webp">p5.js</Tech>
+                        <Tech icon="javascript.svg">javascript</Tech>
+                        <Tech icon="php.svg">php</Tech>
                         <Tech icon="css.svg">CSS</Tech>
                         <Tech icon="html.svg">HTML</Tech>
                     </Project>

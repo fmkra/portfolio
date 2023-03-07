@@ -27,6 +27,11 @@
         "ltv": {
             "description": "Visualizes how vectors on the plane behave when applying linear transformation given by 2x2 matrix. It also calculates eigenvalues and eigenvectors.",
             "skills": "I created this project during linear algebra classes at university. I learned integration between p5.js library and React and how to deploy a website on vercel."
+        },
+        "other": {
+            "title": "Sorting algorithms and other",
+            "description": "Other smaller projects made in p5.js library.",
+            "skills": ""
         }
     }
 }
