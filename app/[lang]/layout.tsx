@@ -2,8 +2,8 @@ import './globals.css'
 import { i18n } from '../../i18n-config'
 
 export const metadata = {
-    title: '',
-    description: '',
+    title: 'Filip Krawczyk',
+    description: 'Filip Krawczyk - Fullstack Web Developer',
 }
 
 export async function generateStaticParams() {
