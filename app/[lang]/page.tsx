@@ -117,11 +117,11 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <Tech icon="html.svg">HTML</Tech>
                     </Project>
                     <Project
-                        src="http://projekty.fkrawczyk.pl/sorting-algorithms"
+                        src="https://projekty.fkrawczyk.pl/sorting-algorithms"
                         dict={dict.projects.other}
                         techHeader={dict.projects.tech}
                         name={dict.projects.other.title}
-                        link="http://projekty.fkrawczyk.pl"
+                        link="https://projekty.fkrawczyk.pl"
                         side="right"
                     >
                         <Tech icon="p5js.webp">p5.js</Tech>
