@@ -11,6 +11,13 @@ module.exports = {
                 'equal': '0 0 1rem 0 rgba(0, 0, 0, 0.5)',
             }
         },
+        keyframes: () => ({
+            shimmer: {
+                '100%': {
+                    transform: 'translateX(100%)',
+                },
+            },
+        }),
     },
     plugins: [],
 }

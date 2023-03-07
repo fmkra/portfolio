@@ -5,62 +5,13 @@ import { DiscordIcon, GithubIcon, MailIcon, NpmIcon } from './icons'
 import Link from 'next/link'
 import Navbar from './navbar'
 import Image from 'next/image'
+import Project from './project'
 
 const Tech = ({ icon, children }: { icon: string; children: string }) => {
     return (
         <div className="flex justify-center rounded-md border border-white p-1">
             <Image src={`/icons/${icon}`} alt={children + ' icon'} height={24} width={24} />
             <span className="ml-1">{children}</span>
-        </div>
-    )
-}
-
-const Project = ({
-    src,
-    dict,
-    techHeader,
-    children,
-    name,
-    link,
-    side,
-}: {
-    src: string
-    dict: { description: string; skills: string }
-    techHeader: string
-    children: ReactNode
-    name: string
-    link: string
-    side: 'left' | 'right'
-}) => {
-    return (
-        <div className="mx-auto my-6 grid max-w-6xl grid-cols-1 gap-4 p-5 text-justify md:grid-cols-5">
-            <article className="contents">
-                <div
-                    className={`${
-                        side == 'left' ? 'md:order-2 md:col-start-4' : 'md:order-1 md:col-start-1'
-                    } md:col-span-2`}
-                >
-                    <h2 className="mb-4 text-center text-2xl">
-                        <Link href={link}>{name}</Link>
-                    </h2>
-                    <section>
-                        <p>{dict.description}</p>
-                    </section>
-                    <section>
-                        <p className="mt-4 mb-2">{techHeader}:</p>
-                        <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">{children}</div>
-                    </section>
-                </div>
-                <section className="md:order-3 md:col-span-5">
-                    <p>{dict.skills}</p>
-                </section>
-                <iframe
-                    src={src}
-                    className={`w-full bg-white max-md:h-72 max-md:max-h-[80vh] max-md:min-h-[50vh] ${
-                        side == 'left' ? 'md:order-1 md:col-start-1' : 'md:order-2 md:col-start-3'
-                    } md:col-span-3 md:h-full md:max-h-screen`}
-                />
-            </article>
         </div>
     )
 }
