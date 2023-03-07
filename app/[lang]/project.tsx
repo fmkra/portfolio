@@ -56,7 +56,7 @@ const Project = ({
                             {inView ? (
                                 <iframe src={src} className="h-full w-full bg-white" />
                             ) : (
-                                <div className="shimmer h-full w-full bg-gray-800"></div>
+                                <div className="shimmer h-full w-full bg-gray-700"></div>
                             )}
                         </div>
                     )}

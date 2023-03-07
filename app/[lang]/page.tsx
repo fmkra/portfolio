@@ -52,9 +52,17 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                     </div>
                 </div>
             </section>
-            <section id="projects">
+            <section id="about">
                 <div className="bg-gray-900 py-12">
-                    <h1 className="mb-8 block text-center text-6xl">{dict.projects.title}</h1>
+                    <h1 className="mb-8 block text-center text-5xl">{dict.about.title}</h1>
+                    <div className="mx-auto max-w-4xl text-justify">
+                        <p>{dict.about.text}</p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div className="bg-gray-800 py-12">
+                    <h1 className="mb-8 block text-center text-5xl">{dict.projects.title}</h1>
                     <Project
                         name="mytriproutes.com"
                         src="https://mytriproutes.com/?ignore_indev"

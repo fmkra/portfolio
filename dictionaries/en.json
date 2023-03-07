@@ -9,6 +9,10 @@
         "about": "About",
         "projects": "Projects"
     },
+    "about": {
+        "title": "About me",
+        "text": "I graduated from the VI Liceum Ogólnokształcące im. Jana Kochanowskiego in Radom, Poland. I am a finalist with honors of the XXVIII and a finalist of the XXIX Polish Olympiad in Informatics. I work for Bolid sp. z o. o. for almost a year as a programmer, where I was working on a driver for IoT devices in Python and a user interface in React. I am currently studying Computer Science at the University of Warsaw. I am interested in creating web applications as well as learning new technologies."
+    },
     "projects": {
         "title": "My projects",
         "tech": "Technologies used",

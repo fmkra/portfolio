@@ -9,6 +9,10 @@
         "about": "O mnie",
         "projects": "Projekty"
     },
+    "about": {
+        "title": "O mnie",
+        "text": "Ukończyłem VI Liceum Ogólnokształcące im. Jana Kochanowskiego w Radomiu. Jestem finalistą z wyróżnieniem XXVIII i finalistą XXIX Olimpiady Informatycznej. Pracowałem przez niecały rok dla firmy Bolid sp. z o. o. jako programista, gdzie tworzyłem sterownik dla urządzeń IoT w Pythonie i interfejs użytkownika w React'cie. Obecnie studiuję Informatykę na Uniwersytecie Warszawskim. Jestem zainteresowany tworzeniem aplikacji webowych, a także uczeniem się nowych technologii."
+    },
     "projects": {
         "title": "Moje projekty",
         "tech": "Wykorzystane technologie",
