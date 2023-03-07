@@ -76,12 +76,14 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <Tech icon="react.svg">React</Tech>
                         <Tech icon="nextjs.svg">Next.js</Tech>
                         <Tech icon="leaflet.svg">leaflet</Tech>
-                        <Tech icon="scss.svg">scss</Tech>
+                        <Tech icon="scss.svg">SCSS</Tech>
                         <Tech icon="tailwind.svg">tailwind</Tech>
+                        <Tech icon="python.svg">python</Tech>
                         <Tech icon="django.svg">django</Tech>
-                        <Tech icon="rest.png">REST framework</Tech>
+                        <Tech icon="rest.png">REST</Tech>
                         <Tech icon="postgresql.svg">postgresql</Tech>
                         <Tech icon="elastic.svg">elasticsearch</Tech>
+                        <Tech icon="redis.svg">redis</Tech>
                         <Tech icon="celery.webp">celery</Tech>
                         <Tech icon="stripe.svg">stripe</Tech>
                         <Tech icon="git.svg">git</Tech>
