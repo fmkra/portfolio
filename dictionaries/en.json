@@ -11,14 +11,14 @@
     },
     "about": {
         "title": "About me",
-        "text": "I graduated from the VI Liceum Ogólnokształcące im. Jana Kochanowskiego in Radom, Poland. I am a finalist with honors of the XXVIII and a finalist of the XXIX Polish Olympiad in Informatics. I worked for Bolid sp. z o. o. for almost a year as a programmer, where I was creating a driver for IoT devices in Python and a user interface in React. I am currently studying Computer Science at the University of Warsaw. I am interested in creating web applications as well as learning new technologies."
+        "text": "I graduated from the VI Liceum Ogólnokształcące im. Jana Kochanowskiego in Radom, Poland. I am a finalist with honors of the XXVIII and a finalist of the XXIX Polish Olympiad in Informatics. I worked for Bolid sp. z o. o. for almost a year as a programmer, where I was working on a driver for IoT devices in Python and a user interface in React. I am currently studying Computer Science at the University of Warsaw. I am interested in creating web applications as well as learning new technologies."
     },
     "projects": {
         "title": "My projects",
         "tech": "Technologies used",
         "mytriproutes": {
             "description": "A website for managing photos and gps tracks. Users can upload their files which are stored on a sever. Then website serves them in many different ways (presentation, interactive map, photo collage and more).",
-            "skills": "Developing this website has taught me how to write maintainable code for a large project. I have learned how to create and use APIs (including Stripe). I have also gained more knowledge and experiende working with technologies listed above. I worked with file uploads and processing on the backend as well as optimizing images."
+            "skills": "Developing this website has taught me how to write maintainable code for a large project. I have learned how to create and use APIs (including Stripe). I have also gained more knowledge and experiende working with technologies listed above. I learned a lot about file uploading and processing on backend as well as image optimization."
         },
         "nextGallery": {
             "description": "A npm package for creating resposive image gallery with next.js. Images placement is calculated by the special algorithm. User can customize how big images should be.",

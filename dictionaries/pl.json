@@ -18,7 +18,7 @@
         "tech": "Wykorzystane technologie",
         "mytriproutes": {
             "description": "Strona internetowa do zarządzania zdjęciami i trasami gps. Użytkownicy mogą wrzucić swoje pliki, które będą przechowywane na serwerze. Następnie strona przedstawia je na różne sposoby (prezentacja, interaktywna mapa, kolaż zdjęć i więcej).",
-            "skills": "Tworzenie tej strony nauczyło mnie pisania łatwego do utrzymania kodu w dużym projektem. Nauczyłem się tworzenia i używania API (w tym Stripe'a), a także zdobyłem więcej wiedzy i doświadczenia przy pracy z wyżej wymienionymi technologiami. Zajmowałem się przesyłaniem i przetwarzaniem plików na backendzie, a także optymalizacją obrazów."
+            "skills": "Tworzenie tej strony nauczyło mnie pisania łatwego do utrzymania kodu w dużym projekcie. Nauczyłem się tworzenia i używania API (w tym Stripe'a), a także zdobyłem więcej wiedzy i doświadczenia przy pracy z wyżej wymienionymi technologiami. Dowiedziałem się wiele na temat przesyłania i przetwarzania plików na backendzie, a także optymalizacji obrazów."
         },
         "nextGallery": {
             "description": "Pakiet npm do tworzenia galerii zdjęć z wykorzystaniem next.js. Ułożenie zdjęć jest ustalane za pomocą specjalnego algorytmu. Użytkownik może dostosować wielkość zdjęć do swoich potrzeb.",
