@@ -13,10 +13,12 @@
         "title": "Moje projekty",
         "tech": "Wykorzystane technologie",
         "mytriproutes": {
-            "description": "Strona internetowa do zarządzania zdjęciami i trasami gps."
+            "description": "Strona internetowa do zarządzania zdjęciami i trasami gps. Użytkownicy mogą wrzucić swoje pliki, które będą przechowywane na serwerze. Następnie strona przedstawia je na różne sposoby (prezentacja, interaktywna mapa, kolaż zdjęć i więcej).",
+            "skills": "Tworzenie tej strony nauczyło mnie pisania łatwego do utrzymania kodu w dużym projektem. Nauczyłem się tworzenia i używania API (w tym Stripe'a), a także zdobyłem więcej wiedzy i doświadczenia przy pracy z wyżej wymienionymi technologiami. Zajmowałem się przesyłaniem i przetwarzaniem plików na backendzie, a także optymalizacją obrazów."
         },
         "nextGallery": {
-            "description": "Biblioteka npm do tworzenia galerii zdjęć z wykorzystaniem next.js. Ułożenie zdjęć jest ustalane za pomocą specjalnego algorytmu. Użytkownik może dostosować wielkość zdjęć do swoich potrzeb."
+            "description": "Pakiet npm do tworzenia galerii zdjęć z wykorzystaniem next.js. Ułożenie zdjęć jest ustalane za pomocą specjalnego algorytmu. Użytkownik może dostosować wielkość zdjęć do swoich potrzeb.",
+            "skills": "Stworzyłem ten pakiet, ponieważ potrzebowałem sposobu na wyświetlenie galerii zdjęć na stronie mytriproutes.com. Chciałem wyodrębnić tą funkcjonalność do osobnej biblioteki i udostępnić ją dla innych jako OpenSource. Nauczyłem się jak skonfigurować package.json do bardziej zaawansowanego użytku oraz jak działają wersje i publikowanie pakietów npm."
         }
     }
 }

@@ -15,6 +15,56 @@ const Tech = ({ icon, children }: { icon: string; children: string }) => {
     )
 }
 
+const Project = ({
+    src,
+    dict,
+    techHeader,
+    children,
+    name,
+    link,
+    side,
+}: {
+    src: string
+    dict: { description: string; skills: string }
+    techHeader: string
+    children: ReactNode
+    name: string
+    link: string
+    side: 'left' | 'right'
+}) => {
+    return (
+        <div className="mx-auto my-6 grid max-w-6xl grid-cols-1 gap-4 p-5 text-justify md:grid-cols-5">
+            <article className="contents">
+                <div
+                    className={`${
+                        side == 'left' ? 'md:order-2 md:col-start-4' : 'md:order-1 md:col-start-1'
+                    } md:col-span-2`}
+                >
+                    <h2 className="mb-4 text-center text-2xl">
+                        <Link href={link}>{name}</Link>
+                    </h2>
+                    <section>
+                        <p>{dict.description}</p>
+                    </section>
+                    <section>
+                        <p className="mt-4 mb-2">{techHeader}:</p>
+                        <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">{children}</div>
+                    </section>
+                </div>
+                <section className="md:order-3 md:col-span-5">
+                    <p>{dict.skills}</p>
+                </section>
+                <iframe
+                    src={src}
+                    className={`w-full bg-white max-md:h-72 max-md:max-h-[80vh] max-md:min-h-[50vh] ${
+                        side == 'left' ? 'md:order-1 md:col-start-1' : 'md:order-2 md:col-start-3'
+                    } md:col-span-3 md:h-full md:max-h-screen`}
+                />
+            </article>
+        </div>
+    )
+}
+
 export default async function Page({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getDictionary(lang)
 
@@ -54,66 +104,44 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
             <section id="projects">
                 <div className="bg-gray-900 py-12">
                     <h1 className="block text-center text-6xl">{dict.projects.title}</h1>
-                    <div className="mx-auto my-12 grid max-w-6xl grid-cols-1 gap-4 p-5 text-justify md:grid-cols-5">
-                        <article className="contents">
-                            <div className="md:order-2 md:col-span-2">
-                                <h2 className="mb-4 text-center text-2xl">
-                                    <Link href="https://mytriproutes.com">mytriproutes.com</Link>
-                                </h2>
-                                <section>
-                                    <p>{dict.projects.mytriproutes.description}</p>
-                                </section>
-                                <section>
-                                    <p className="mt-4 mb-2">{dict.projects.tech}:</p>
-                                    <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">
-                                        <Tech icon="typescript.svg">typescript</Tech>
-                                        <Tech icon="react.svg">React</Tech>
-                                        <Tech icon="nextjs.svg">Next.js</Tech>
-                                        <Tech icon="leaflet.svg">leaflet</Tech>
-                                        <Tech icon="scss.svg">scss</Tech>
-                                        <Tech icon="tailwind.svg">tailwind</Tech>
-                                        <Tech icon="django.svg">django</Tech>
-                                        <Tech icon="rest.png">REST framework</Tech>
-                                        <Tech icon="postgresql.svg">postgresql</Tech>
-                                        <Tech icon="elastic.svg">elasticsearch</Tech>
-                                        <Tech icon="celery.webp">celery</Tech>
-                                        <Tech icon="stripe.svg">stripe</Tech>
-                                        <Tech icon="git.svg">git</Tech>
-                                        <Tech icon="docker.svg">docker</Tech>
-                                        <Tech icon="npm.svg">npm</Tech>
-                                    </div>
-                                </section>
-                            </div>
-                            <iframe
-                                src="https://mytriproutes.com/?ignore_indev"
-                                className="h-full min-h-[50vh] w-full bg-white md:order-1 md:col-span-3"
-                            />
-                        </article>
-                        <article className="contents">
-                            <div className="md:order-3 md:col-span-2">
-                                <h2 className="mb-4 text-center text-2xl">
-                                    <Link href="https://github.com/fmkra/next-gallery">next-gallery</Link>
-                                </h2>
-                                <section>
-                                    <p>{dict.projects.nextGallery.description}</p>
-                                </section>
-                                <section>
-                                    <p className="mt-4 mb-2">{dict.projects.tech}:</p>
-                                    <div className="flex flex-wrap gap-1 after:grow-[100000] [&>*]:grow">
-                                        <Tech icon="typescript.svg">typescript</Tech>
-                                        <Tech icon="react.svg">React</Tech>
-                                        <Tech icon="nextjs.svg">Next.js</Tech>
-                                        <Tech icon="git.svg">git</Tech>
-                                        <Tech icon="npm.svg">npm</Tech>
-                                    </div>
-                                </section>
-                            </div>
-                            <iframe
-                                src="https://next-gallery.fkrawczyk.pl/basic"
-                                className="h-full min-h-[50vh] w-full bg-gray-800 md:order-4 md:col-span-3"
-                            />
-                        </article>
-                    </div>
+                    <Project
+                        name="mytriproutes.com"
+                        src="https://mytriproutes.com/?ignore_indev"
+                        link="https://mytriproutes.com"
+                        dict={dict.projects.mytriproutes}
+                        techHeader={dict.projects.tech}
+                        side="left"
+                    >
+                        <Tech icon="typescript.svg">typescript</Tech>
+                        <Tech icon="react.svg">React</Tech>
+                        <Tech icon="nextjs.svg">Next.js</Tech>
+                        <Tech icon="leaflet.svg">leaflet</Tech>
+                        <Tech icon="scss.svg">scss</Tech>
+                        <Tech icon="tailwind.svg">tailwind</Tech>
+                        <Tech icon="django.svg">django</Tech>
+                        <Tech icon="rest.png">REST framework</Tech>
+                        <Tech icon="postgresql.svg">postgresql</Tech>
+                        <Tech icon="elastic.svg">elasticsearch</Tech>
+                        <Tech icon="celery.webp">celery</Tech>
+                        <Tech icon="stripe.svg">stripe</Tech>
+                        <Tech icon="git.svg">git</Tech>
+                        <Tech icon="docker.svg">docker</Tech>
+                        <Tech icon="npm.svg">npm</Tech>
+                    </Project>
+                    <Project
+                        name="next-gallery"
+                        src="https://next-gallery.fkrawczyk.pl/basic"
+                        link="https://github.com/fmkra/next-gallery"
+                        dict={dict.projects.nextGallery}
+                        techHeader={dict.projects.tech}
+                        side="right"
+                    >
+                        <Tech icon="typescript.svg">typescript</Tech>
+                        <Tech icon="react.svg">React</Tech>
+                        <Tech icon="nextjs.svg">Next.js</Tech>
+                        <Tech icon="git.svg">git</Tech>
+                        <Tech icon="npm.svg">npm</Tech>
+                    </Project>
                 </div>
             </section>
         </>
