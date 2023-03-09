@@ -128,6 +128,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                     >
                         <Tech icon="p5js.webp">p5.js</Tech>
                         <Tech icon="javascript.svg">javascript</Tech>
+                        <Tech icon="jquery.svg">jQuery</Tech>
                         <Tech icon="php.svg">php</Tech>
                         <Tech icon="css.svg">CSS</Tech>
                         <Tech icon="html.svg">HTML</Tech>
