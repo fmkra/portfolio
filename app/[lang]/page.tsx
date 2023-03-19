@@ -65,8 +65,8 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                     <h1 className="mb-8 block px-5 text-center text-5xl">{dict.projects.title}</h1>
                     <Project
                         name="mytriproutes.com"
-                        src="https://mytriproutes.com/?ignore_indev"
-                        link="https://mytriproutes.com"
+                        src="https://mytriproutes.com/home?ignore_indev"
+                        link="https://mytriproutes.com/home"
                         dict={dict.projects.mytriproutes}
                         techHeader={dict.projects.tech}
                         side="left"
