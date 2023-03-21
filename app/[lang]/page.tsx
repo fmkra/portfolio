@@ -84,7 +84,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                         <Tech icon="postgresql.svg">postgresql</Tech>
                         <Tech icon="elastic.svg">elasticsearch</Tech>
                         <Tech icon="redis.svg">redis</Tech>
-                        <Tech icon="celery.webp">celery</Tech>
+                        <Tech icon="celery.svg">celery</Tech>
                         <Tech icon="stripe.svg">stripe</Tech>
                         <Tech icon="git.svg">git</Tech>
                         <Tech icon="docker.svg">docker</Tech>
