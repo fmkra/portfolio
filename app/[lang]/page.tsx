@@ -36,16 +36,25 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                     <div className="absolute top-0 left-0 right-0 flex md:p-5">
                         <Navbar dict={dict.nav} lang={lang} />
                         <div className="ml-auto flex flex-wrap justify-end">
-                            <Link className="m-5" href="https://discord.com/users/302040960848625664" target="_blank">
+                            <Link
+                                aria-label="discord"
+                                className="m-5"
+                                href="https://discord.com/users/302040960848625664"
+                                target="_blank"
+                            >
                                 <DiscordIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
                             </Link>
-                            <Link className="m-5" href="https://npmjs.com/~fmkra" target="_blank">
+                            <Link aria-label="npm" className="m-5" href="https://npmjs.com/~fmkra" target="_blank">
                                 <NpmIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
                             </Link>
-                            <Link className="m-5" href="https://github.com/fmkra" target="_blank">
+                            <Link aria-label="github" className="m-5" href="https://github.com/fmkra" target="_blank">
                                 <GithubIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
                             </Link>
-                            <Link className="m-5 flex justify-center" href="mailto:kontakt@fkrawczyk.pl">
+                            <Link
+                                aria-label="email"
+                                className="m-5 flex justify-center"
+                                href="mailto:kontakt@fkrawczyk.pl"
+                            >
                                 <MailIcon className="h-8 opacity-70 transition-all hover:cursor-pointer hover:opacity-100" />
                             </Link>
                         </div>
