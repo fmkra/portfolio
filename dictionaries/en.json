@@ -7,7 +7,8 @@
     "nav": {
         "home": "Home",
         "about": "About",
-        "projects": "Projects"
+        "projects": "Projects",
+        "changeLanguage": "Change language to Polish"
     },
     "about": {
         "title": "About me",

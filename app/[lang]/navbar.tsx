@@ -12,7 +12,7 @@ export default function Navbar({
     dict,
     lang,
 }: {
-    dict: { home: string; about: string; projects: string }
+    dict: { home: string; about: string; projects: string; changeLanguage: string }
     lang: Locale
 }) {
     const [open, setOpen] = useState(false)
@@ -50,7 +50,7 @@ export default function Navbar({
                         </a>
                     </li>
                     <li>
-                        <ChangeLanguage lang={lang} />
+                        <ChangeLanguage lang={lang} label={dict.changeLanguage} />
                     </li>
                 </ul>
             </nav>

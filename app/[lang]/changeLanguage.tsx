@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { i18n, Locale } from '@/i18n-config'
 import { FlagIcon } from './icons'
 
-export default function ChangeLanguage({ lang }: { lang: Locale }) {
+export default function ChangeLanguage({ lang, label }: { lang: Locale; label: string }) {
     const pathName = usePathname()
     const otherLang = lang == 'pl' ? 'en' : 'pl'
 
@@ -17,7 +17,7 @@ export default function ChangeLanguage({ lang }: { lang: Locale }) {
     }
 
     return (
-        <Link href={redirectedPathName()}>
+        <Link href={redirectedPathName()} aria-label={label}>
             <FlagIcon locale={otherLang} className="mx-auto mt-[0.125rem] h-6" />
         </Link>
     )
